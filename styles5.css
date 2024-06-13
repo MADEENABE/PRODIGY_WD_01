@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+section {
+    padding: 100px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+}
+
+#about {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+}
+
+#services {
+    background: linear-gradient(90deg, #43cea2, #185a9d);
+    color: white;
+}
+
+#portfolio {
+    background: linear-gradient(90deg, #ffafbd, #ffc3a0);
+    color: white;
+}
+
+#team {
+    background: linear-gradient(90deg, #ff9a9e, #fecfef);
+    color: white;
+}
+
+#contact {
+    background: linear-gradient(90deg, #a1c4fd, #c2e9fb);
+    color: white;
+}
+
+.portfolio-grid, .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item, .team-member {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.portfolio-item:hover, .team-member:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
